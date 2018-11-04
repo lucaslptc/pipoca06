@@ -88,6 +88,7 @@ public class ManterFilmesController {
 		} catch (IOException e) {
 			e.printStackTrace();
 			return "Erro";
+			
 		}
 	}
 }
