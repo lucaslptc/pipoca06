@@ -15,6 +15,7 @@ public class FilmeService {
 	@Autowired
 	private FilmeDAO dao;
 	
+	
 	public Filme buscarFilme(int id) throws IOException{
 		return dao.buscarFilme(id);
 	}

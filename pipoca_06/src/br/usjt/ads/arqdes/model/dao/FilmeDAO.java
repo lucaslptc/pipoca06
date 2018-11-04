@@ -14,13 +14,11 @@ import br.usjt.ads.arqdes.model.entity.Filme;
 public class FilmeDAO {
 	@PersistenceContext
 	EntityManager manager;
-	
 	public int inserirFilme(Filme filme) throws IOException {
 		manager.persist(filme);
 		return filme.getId();
 	}
 
-	
 	public Filme buscarFilme(int id) throws IOException{
 		return manager.find(Filme.class, id);
 	}

@@ -19,7 +19,6 @@ public class GeneroDAO {
 		return manager.find(Genero.class, id);
 	}
 
-	
 	@SuppressWarnings("unchecked")
 	public List<Genero> listarGeneros() throws IOException {
 		return manager.createQuery("select g from Genero g").getResultList();
